@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@100..900&family=Inconsolata:wght@200..900&family=Montserrat:wght@100..900&family=Nunito+Sans:wght@200..1000&family=Outfit:wght@100..900&family=Poppins:wght@100..900&family=Roboto:wght@100..900&display=swap');
+
+.homepage-container {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Poppins" , sans-serif;
+}
+.heropage-container {
+  width: 45%;
+  height: auto;
+
+} 
+.heropage h1{
+  font-size: 2.2rem;
+  letter-spacing: 0.5px;
+  line-height: 1.7;
+  background: #1c92d2;
+  font-weight: 900;
+  background: -webkit-linear-gradient(80deg, #588b96, #1c92d2);
+  background: linear-gradient(80deg, #5d96a1, #b8cace,  #1c92d2);
+  color: transparent;
+  -webkit-background-clip: text;
+  animation: slideIn 1s ease-out;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+.heropage p {
+  font-size: 1.1rem;
+  width: 60%;
+  letter-spacing: 0.2px;
+  color: aliceblue;
+  font-weight: lighter;
+}
+.heropage button {
+  height: 3rem;
+  width: 11rem;
+  padding: 10px;
+  background-color: #0931e1;
+  opacity: 0.8;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  color: white;
+  opacity: 0.8;
+  font-weight: 700;
+}
+
+.heropage button:hover {
+  background-color: #080875;
+  transform: scale(1.05);
+}
+.heropage button:active {
+  transform: scale(1);
+}
