@@ -1,0 +1,149 @@
+body {
+    background-color: darkblue;
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    overflow: hidden; 
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align content to the top */
+    width: 95%; 
+    max-width: 1200px;
+    height: 90vh; 
+    background-color: rgba(255, 255, 255, 0.1); 
+    border-radius: 10px; 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.textarea {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left;
+}
+
+p {
+    width: 100%;
+    text-indent:2rem;
+    line-height: 2.8rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px 0;
+    font-size: medium;
+    
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin-bottom: 10rem;
+    text-align: left;
+    margin-top: 4rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top:4rem;
+    margin-bottom: 2.5rem;
+    text-align: left;
+}
+
+button {
+    padding: 0.5rem;
+    border: none;
+    background-color: aqua;
+    border-radius: 5rem;
+    color: darkblue;
+    font-weight: 800;
+    font-size: medium;
+    width: 50%;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 15px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #1dd1d1;
+    transform: scale(1.05);
+}
+
+.image {
+    flex: 1;
+    text-align: right;
+    height: 100%; 
+}
+
+.image img {
+    max-width: 100%;
+    height: 100%; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    object-fit: cover; 
+}
+
+
+@media (max-width: 1024px) {
+    .main-container {
+        flex-direction: column;
+        height: auto; 
+        padding: 20px 10px;
+    }
+
+    .textarea {
+        margin-right: 0;
+        text-align: center; 
+    }
+
+    h1, h4, p {
+        text-align: center; 
+    }
+
+    button {
+        width: 70%; 
+    }
+
+    .image {
+        text-align: center; 
+        margin-top: 20px;
+        height: auto; 
+    }
+
+    .image img {
+        height: auto;
+        max-height: 300px; 
+    }
+}
+
+@media (max-width: 768px) {
+    button {
+        width: 90%; 
+    }
+
+    h1 {
+        font-size: 2rem; 
+    }
+
+    p {
+        font-size: 1rem; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        padding: 0.5rem;
+        font-size: medium;
+    }
+}

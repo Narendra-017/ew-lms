@@ -1,0 +1,151 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+   
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh; 
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
+    gap: 30px; 
+    width: 100%; 
+    max-width: 1200px; 
+    padding: 30px; 
+    box-sizing: border-box; 
+}
+
+.card1, .card2, .card3 {
+    padding: 30px; 
+    text-align: left; 
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    overflow: visible; 
+    height: auto; 
+}
+
+
+.card1:hover, .card2:hover, .card3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+.card1 {
+    background: linear-gradient(135deg, #6a11cb, #2575fc); 
+    color: #fff;
+}
+
+.card2 {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); 
+    color: #fff;
+}
+
+.card3 {
+    background: linear-gradient(135deg, #43cea2, #185a9d); 
+    color: #fff;
+}
+
+
+h4 {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    margin-bottom: 15px; 
+}
+
+h3 {
+    font-size: 2.5rem; 
+    font-weight: bold;
+    margin: 15px 0; 
+}
+h1{
+    color:white;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style-type: disc; 
+    padding-left: 20px;
+    margin: 15px 0; 
+    text-align: left;
+}
+
+ul li {
+    margin-bottom: 10px; 
+    font-size: 1.9rem; 
+    line-height: 1.8; 
+}
+
+
+.pay-btn {
+    padding: 15px 20px; 
+    border: none;
+    width:30rem;
+    background-color: #ff6f61;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem; 
+    border-radius: 8px; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px; 
+}
+
+.pay-btn:hover {
+    background-color: #ff3b2b;
+    transform: scale(1.05);
+}
+
+
+@media (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 20px; 
+    }
+
+    .card1, .card2, .card3 {
+        padding: 25px; 
+    }
+
+    h4 {
+        font-size: 1.3rem; 
+    }
+
+    h3 {
+        font-size: 2rem; 
+    }
+
+    .pay-btn {
+        font-size: 1.2rem; 
+        padding: 12px 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr; 
+    }
+
+    h4, h3 {
+        font-size: 1.1rem; 
+    }
+
+    .pay-btn {
+        font-size: 1.1rem;
+        padding: 10px 15px;
+    }
+}

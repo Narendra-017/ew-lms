@@ -1,0 +1,120 @@
+.careers-page {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2rem;
+    height: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    background-color: rgb(230, 230, 238);
+}
+
+
+.careers-page .main-container {
+    width: 100%;
+    height: fit-content;
+    padding: 2rem 10px; 
+    background: rgb(222, 217, 214);
+    background: linear-gradient(170deg, rgba(222, 217, 214, 1) 0%, rgba(192, 52, 177, 1) 9%, rgba(235, 209, 151, 1) 41%);
+    box-sizing: border-box; 
+}
+
+
+.careers-page .button-container {
+    text-align: left; 
+    margin: 0; 
+}
+
+
+.careers-page button {
+    padding: 10px;
+    font-style: oblique;
+    font-weight: 800;
+    font-size: larger;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border-radius: 0.5rem;
+    border: none;
+    margin: 0; 
+    padding: 20px;
+}
+
+
+.careers-page .cards-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 10px;
+    justify-content: space-around; 
+    margin-top:-20rem; 
+    box-sizing: border-box; 
+}
+
+
+.careers-page a {
+    display: block;
+    width: 20%;
+    height: 25rem;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.careers-page .hr {
+    background-color: #0077B6;
+    height: 22rem;
+    border-radius: 20px;
+    background-image: url("https://tse2.mm.bing.net/th?id=OIP.hnYNMErPX5GOvD7W1inttQHaE8&pid=Api&P=0&h=220");
+    background-repeat: no-repeat;
+    
+    padding-top: 18rem;
+    font-weight: 700;
+    font-size: larger;
+    color: white;
+  
+}
+
+.careers-page .web {
+    background-color: #0096C7;
+    height: 22rem;
+    border-radius: 20px;
+    background-image: url("https://tse1.mm.bing.net/th?id=OIP.toYTFvTGI9we6F4yrb-BawHaFj&pid=Api&P=0&h=220");
+    background-repeat: no-repeat;
+    padding-top: 18rem;
+   
+    font-weight: 700;
+    font-size: larger;
+    color: white;
+    
+   
+}
+
+.careers-page .cyber {
+    background-color: #00B4D8;
+    height: 22rem;
+    border-radius: 20px;
+    background-image: url("https://tse4.mm.bing.net/th?id=OIP.LGQ0Eja_NrJ-XswAs-tqEQHaEo&pid=Api&P=0&h=220");
+    background-repeat: no-repeat;
+    padding-top: 18rem;
+    font-weight: 700;
+    font-size: larger;
+    color: white;
+}
+
+.careers-page .cloud {
+    background-color: #48CAE4;
+    height: 22rem;
+    border-radius: 20px;
+    background-image: url("https://tse4.mm.bing.net/th?id=OIP.eXEYoMfKBnVy6C01fCvlKAHaEO&pid=Api&P=0&h=220");
+    background-repeat: no-repeat;
+    padding-top: 18rem;
+    font-weight: 700;
+    font-size: larger;
+    color: white;
+}
+
+.careers-page a:hover {
+    transform: scale(1.05);
+}
